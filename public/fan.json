@@ -1,0 +1,134 @@
+[
+    {
+      "category_id": "1",
+      "resale_price": "$1,939.71",
+      "original_price": "$2,327.67",
+      "picture": "https://i.postimg.cc/NGkChCT9/old-ceiling-fan-mounted-on-rafters-D8-Y74-F.jpg",
+      "years_of_use": 36,
+      "name": "ceiling fan",
+      "saler_name": "Gilbert Herrera",
+      "address": "229 Bergen Street, Belfair, Maryland, 8026",
+      "posted_time": "2022-09-27T11:22:47 -06:00"
+    },
+    {
+      "category_id": "1",
+      "resale_price": "$2,643.30",
+      "original_price": "$3,420.76",
+      "picture": "https://i.postimg.cc/brh5xKn8/21282712-old-ceiling-fans.webp",
+      "years_of_use": 22,
+      "name": "ceiling fan",
+      "saler_name": "Anne Mosley",
+      "address": "519 Barlow Drive, Belmont, Federated States Of Micronesia, 7357",
+      "posted_time": "2022-10-19T12:49:24 -06:00"
+    },
+    {
+      "category_id": "1",
+      "resale_price": "$1,369.88",
+      "original_price": "$3,730.71",
+      "picture": "https://i.postimg.cc/DZqjwBMN/Heritage-1925-raw-solid-teak-wood.jpg",
+      "years_of_use": 22,
+      "name": "ceiling fan",
+      "saler_name": "Hazel Black",
+      "address": "278 Hale Avenue, Harrodsburg, Rhode Island, 2259",
+      "posted_time": "2015-12-01T06:33:20 -06:00"
+    },
+    {
+      "category_id": "2",
+      "resale_price": "$3,088.96",
+      "original_price": "$2,863.87",
+      "picture": "https://i.postimg.cc/d0XPyHnt/3948f02f821c21a71bedefdd5acaa483.jpg",
+      "years_of_use": 30,
+      "name": "Table Fan",
+      "saler_name": "Love Cline",
+      "address": "891 Berry Street, Blue, New York, 2004",
+      "posted_time": "2021-08-15T04:07:49 -06:00"
+    },
+    {
+      "category_id": "2",
+      "resale_price": "$3,257.08",
+      "original_price": "$1,458.37",
+      "picture": "https://i.postimg.cc/G3FVLm0p/download.jpg",
+      "years_of_use": 20,
+      "name": "Table Fan",
+      "saler_name": "Fernandez Lawrence",
+      "address": "774 Just Court, Juarez, Alaska, 2966",
+      "posted_time": "2017-07-05T01:02:25 -06:00"
+    },
+    {
+      "category_id": "2",
+      "resale_price": "$1,989.64",
+      "original_price": "$2,558.90",
+      "picture": "https://i.postimg.cc/NF6WZgt5/download-1.jpg",
+      "years_of_use": 35,
+      "name": "Table Fan",
+      "saler_name": "Meyer Dyer",
+      "address": "146 Harden Street, Bellamy, Missouri, 416",
+      "posted_time": "2022-09-27T03:04:09 -06:00"
+    },
+    {
+      "category_id": "3",
+      "resale_price": "$3,637.65",
+      "original_price": "$1,546.89",
+      "picture": "https://i.postimg.cc/mrhWhfY5/19915af10742e2216b08a3e29b407c95.jpg",
+      "years_of_use": 30,
+      "name": "Stand Fan",
+      "saler_name": "Mccullough Christian",
+      "address": "144 Times Placez, Cutter, Ohio, 6469",
+      "posted_time": "2017-12-15T06:59:44 -06:00"
+    },
+    {
+      "category_id": "3",
+      "resale_price": "$2,422.99",
+      "original_price": "$3,303.44",
+      "picture": "https://i.postimg.cc/Dy7D83FP/images.jpg",
+      "years_of_use": 26,
+      "name": "Stand Fan",
+      "saler_name": "Alyssa Oneil",
+      "address": "977 Harwood Place, Clarence, Oklahoma, 4287",
+      "posted_time": "2014-08-06T03:17:39 -06:00"
+    },
+    {
+      "category_id": "3",
+      "resale_price": "$2,094.04",
+      "original_price": "$3,292.74",
+      "picture": "https://i.postimg.cc/kGvpffNS/images-1.jpg",
+      "years_of_use": 23,
+      "name": "Stand Fan",
+      "saler_name": "Meadows Padilla",
+      "address": "962 Tennis Court, Century, Hawaii, 3691",
+      "posted_time": "2017-02-14T09:51:11 -06:00"
+    },
+    {
+      "category_id": "1",
+      "resale_price": "$3,301.69",
+      "original_price": "$3,527.07",
+      "picture": "https://i.postimg.cc/nrpdjq8h/old-ceiling-fan-rust-260nw-667132249.webp",
+      "years_of_use": 40,
+      "name": "ceiling fan",
+      "saler_name": "Sheppard Johns",
+      "address": "994 Remsen Avenue, Caspar, New Mexico, 168",
+      "posted_time": "2016-11-11T09:39:18 -06:00"
+    },
+    {
+      "category_id": "2",
+      "resale_price": "$1,666.44",
+      "original_price": "$3,806.75",
+      "picture": "https://i.postimg.cc/fynGHV6G/download-2.jpg",
+      "years_of_use": 31,
+      "name": "Table Fan",
+      "saler_name": "Reva Clay",
+      "address": "480 Roebling Street, Rivera, Wisconsin, 1443",
+      "posted_time": "2017-06-12T08:19:52 -06:00"
+    },
+    {
+      "category_id": "3",
+      "resale_price": "$2,181.61",
+      "original_price": "$3,752.69",
+      "picture": "https://i.postimg.cc/T10trhGq/product-jpeg-500x500.webp",
+      "years_of_use": 32,
+      "name": "Stand Fan",
+      "saler_name": "Deena Blackwell",
+      "address": "582 Throop Avenue, Staples, Arizona, 7244",
+      "posted_time": "2017-10-03T07:45:33 -06:00"
+    }
+  ]
