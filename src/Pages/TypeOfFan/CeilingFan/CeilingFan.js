@@ -12,7 +12,7 @@ const CeilingFan = () => {
         <div>
             <Banner></Banner>
             <h1 className='text-4xl lg:m-10 mb-8 text-primary'>All fan</h1>
-           <div className='flex flex-col lg:flex-row gap-5 justify-center items-center'>
+           <div className='grid grid-cols-1 lg:grid-cols-4 gap-3 lg:ml-3 justify-center items-center'>
               {
                 ceilingFans.map(fan =>  <FanCard
                 key={fan._id}

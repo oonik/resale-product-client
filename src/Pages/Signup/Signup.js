@@ -1,12 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const Signup = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { createUserWithEmail } = useContext(AuthContext);
     const [signupError, setSignupError] = useState('');
+    
+    const navigate = useNavigate();
+    
+    
 
     const handleSingUp = data => {
         setSignupError('');
@@ -20,6 +24,7 @@ const Signup = () => {
             .catch(err => {
                 console.log(err.message)
                 setSignupError(err.message)
+                
             });
 
         const saveUser = (name, role, email) => {
@@ -34,7 +39,7 @@ const Signup = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log('save user', data)
-
+                    navigate('/')
                 })
         }
     }
@@ -82,7 +87,7 @@ const Signup = () => {
                             {signupError && <p className='text-red-600'>{signupError}</p>}
                         </div>
                     </form>
-                    <p className='text-center'>New to Doctors Portal? <Link to='/login'><small className='text-secondary'>Create new account</small></Link></p>
+                    <p className='text-center'>Already have an account? <Link to='/login'><small className='text-secondary'>Login</small></Link></p>
                 </div>
             </div>
         </div>
