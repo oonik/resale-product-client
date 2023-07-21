@@ -10,6 +10,7 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import AddProduct from "../../Pages/Dashboard/AddProduct/AddProduct";
 import AllUser from "../../Pages/Dashboard/AllUser/AllUser";
 import SellerRoute from "../SellerRoute/SellerRoute";
+import AdminRoute from "../AdminRoute/AdminRoute";
 
 export const router = createBrowserRouter([
     {
