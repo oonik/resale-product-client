@@ -11,6 +11,8 @@ import AddProduct from "../../Pages/Dashboard/AddProduct/AddProduct";
 import AllUser from "../../Pages/Dashboard/AllUser/AllUser";
 import SellerRoute from "../SellerRoute/SellerRoute";
 import AdminRoute from "../AdminRoute/AdminRoute";
+import NotFoundPage from "../../Pages/NotFoundPage/NotFoundPage";
+import Blog from "../../Pages/Blog/Blog";
 
 export const router = createBrowserRouter([
     {
@@ -28,11 +30,15 @@ export const router = createBrowserRouter([
             {
                 path: '/ceiling/:id',
                 element: <CeilingFan></CeilingFan>,
-                loader: ({params})=> fetch(`http://localhost:5000/ceiling/${params.id}`)
+                loader: ({params})=> fetch(`https://old-fan-sell-server.vercel.app/ceiling/${params.id}`)
             },
             {
                 path: '/signup',
                 element: <Signup></Signup>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             }
         ]
     },
@@ -50,8 +56,12 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/alluser',
-                element: <AllUser></AllUser>
+                element: <AdminRoute><AllUser></AllUser></AdminRoute>
             }
         ]
+    },
+    {
+        path: '*',
+        element: <NotFoundPage></NotFoundPage>
     }
 ])

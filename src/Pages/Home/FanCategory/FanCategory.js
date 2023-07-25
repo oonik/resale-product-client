@@ -5,16 +5,16 @@ const FanCategory = () => {
     const [fanCategories, setFanCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/fancategory')
+        fetch('https://old-fan-sell-server.vercel.app/fancategory')
             .then(res => res.json())
             .then(data => setFanCategories(data))
     }, [])
     return (
-        <div className='m-20'>
-            <h2 className='text-4xl text-center font-bold'>Fan categories</h2>
+        <div className='m-10'>
+            <h2 className='text-4xl text-center text-primary font-bold'>Fan categories</h2>
             <div className='grid lg:grid-cols-3 gap-5 justify-center items-center'>
             {
-                fanCategories.map(fanCategory => <div key={fanCategory._id}  className="card h-4/5 bg-base-100 shadow-xl">
+                fanCategories.map(fanCategory => <div key={fanCategory._id}  className="card h-4/5 bg-base-100 shadow-xl border-primary border-2">
                 <figure className="px-10 pt-10">
                   <img src={fanCategory.img} alt="Shoes" className="rounded-xl" />
                 </figure>

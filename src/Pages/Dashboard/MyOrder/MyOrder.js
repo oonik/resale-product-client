@@ -8,14 +8,14 @@ const MyOrder = () => {
     const { data: orders = [], refetch } = useQuery({
         queryKey: ['orders', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/bookings?email=${user?.email}`)
+            const res = await fetch(`https://old-fan-sell-server.vercel.app/bookings?email=${user?.email}`)
             const data = await res.json();
             return data
         }
     });
 
     const handleDelete = (id) =>{
-         fetch(`http://localhost:5000/booking/${id}`, {
+         fetch(`https://old-fan-sell-server.vercel.app/booking/${id}`, {
             method: 'DELETE',
 
          })
@@ -27,11 +27,11 @@ const MyOrder = () => {
          })
     }
     return (
-        <div className="overflow-x-auto m-10">
-            <table className="table">
+        <div className="overflow-x-auto m-10 sm:table-sx">
+            <table className="table ">
                 {/* head */}
                 <thead>
-                    <tr>
+                    <tr className="bg-sky-300 text-white">
                         <th></th>
                         <th>Name</th>
                         <th>Price</th>

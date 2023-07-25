@@ -7,29 +7,30 @@ const Signup = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { createUserWithEmail } = useContext(AuthContext);
     const [signupError, setSignupError] = useState('');
-    
+
     const navigate = useNavigate();
-    
-    
+
+
 
     const handleSingUp = data => {
+        console.log(data)
         setSignupError('');
         createUserWithEmail(data.email, data.password)
             .then(result => {
                 const user = result.user;
-                // console.log(user)
+                 console.log(user)
 
                 saveUser(data.firstName, data.role, data.email)
             })
             .catch(err => {
                 console.log(err.message)
                 setSignupError(err.message)
-                
+
             });
 
         const saveUser = (name, role, email) => {
             const user = { name, role, email }
-            fetch('http://localhost:5000/users', {
+            fetch('https://old-fan-sell-server.vercel.app/users', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -57,10 +58,12 @@ const Signup = () => {
                             {errors.firstName && <p className='text-red-500'>{errors.firstName?.message}</p>}
                         </div>
                         <div className="form-control w-full max-w-xs">
-                            <label className="label">
-                                <span className="label-text">Role</span>
-                            </label>
-                            <input type="text" {...register("role", { required: "role is required" })} placeholder="seller/buyer" className="input input-bordered" />
+
+                            <label>Role Selection</label>
+                            <select {...register("role", { required: "role is required" })} className="input input-bordered">
+                                <option value="seller">Seller</option>
+                                <option value="buyer">Buyer</option>
+                            </select>
                             {errors.role && <p className='text-red-500'>{errors.role?.message}</p>}
                         </div>
                         <div className="form-control w-full max-w-xs">

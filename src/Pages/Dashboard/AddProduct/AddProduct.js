@@ -11,7 +11,7 @@ const AddProduct = () => {
     const time = new Date();
 
     const handleAddProduct = data => {
-        fetch('http://localhost:5000/fan', {
+        fetch('https://old-fan-sell-server.vercel.app/fan', {
             method: 'POST',
             headers: {
                 'content-type':'application/json'
@@ -30,40 +30,23 @@ const AddProduct = () => {
         <form onSubmit={handleSubmit(handleAddProduct)}>
             
            <div className='hero'>
-           <div className='p-10 w-96 shadow-xl'>
-             <h1 className='text-2xl text-center mb-6 text-primary'>Add Product</h1>
+           <div className='p-10 w-full shadow-xl'>
+             <h1 className='text-2xl font-bold text-center mb-6 text-primary'>Add Product</h1>
+
+             <div className='lg:flex mb-4'>
              <div className="form-control w-full max-w-xs">
                 <label className="label">
-                    <span className="label-text">Product name</span>
+                    <span className="label-text text-black">Product name</span>
                 </label>
-                <select {...register("name")}>
+                <select {...register("name")} className='border-2'>
                 <option value="Stand Fan">Stand Fan</option>
                 <option value="Ceiling Fan">Ceiling Fan</option>
                 <option value="Table Fan">Table Fan</option>
             </select>
             </div>
-           <div className="form-control w-full max-w-xs">
+            <div className="form-control w-full max-w-xs lg:ml-10">
                 <label className="label">
-                    <span className="label-text">Saler name</span>
-                </label>
-                <input type="text" {...register("saler_name", { required: "Name is required" })} placeholder="name" className="input input-bordered" />
-            </div>
-           <div className="form-control w-full max-w-xs">
-                <label className="label">
-                    <span className="label-text">Original price</span>
-                </label>
-                <input type="number" {...register("original_price", { required: "price is required" })} placeholder="price" className="input input-bordered" />
-            </div>
-           <div className="form-control w-full max-w-xs">
-                <label className="label">
-                    <span className="label-text">Resale price</span>
-                </label>
-                <input type="number" {...register("resale_price", { required: "price is required" })} placeholder="price" className="input input-bordered" />
-            </div>
-            
-            <div className="form-control w-full max-w-xs">
-                <label className="label">
-                    <span className="label-text">Location</span>
+                    <span className="label-text  text-black">Location</span>
                 </label>
                 <select {...register("address")}>
                 <option value="dhaka">Dhaka</option>
@@ -71,9 +54,42 @@ const AddProduct = () => {
                 <option value="chittagong">Chittagong</option>
             </select>
             </div>
+            </div>
+
+            <div className='lg:flex mb-4'>
             <div className="form-control w-full max-w-xs">
                 <label className="label">
-                    <span className="label-text">Category</span>
+                    <span className="label-text  text-black">Saler name</span>
+                </label>
+                <input type="text" {...register("saler_name", { required: "Name is required" })} placeholder="name" className="input input-bordered" />
+            </div>
+           <div className="form-control w-full max-w-xs lg:ml-10">
+                <label className="label">
+                    <span className="label-text  text-black">Original price</span>
+                </label>
+                <input type="number" {...register("original_price", { required: "price is required" })} placeholder="price" className="input input-bordered" />
+            </div>
+            </div>
+
+            <div className='lg:flex mb-4'>
+           <div className="form-control w-full max-w-xs">
+                <label className="label">
+                    <span className="label-text  text-black">Resale price</span>
+                </label>
+                <input type="number" {...register("resale_price", { required: "price is required" })} placeholder="price" className="input input-bordered" />
+            </div>
+            <div className="form-control w-full max-w-xs lg:ml-10">
+                <label className="label">
+                    <span className="label-text  text-black">Year of purchase</span>
+                </label>
+                <input type="number" {...register("years_of_use", { required: "Year of purchase is required" })} placeholder="Year of purchase" className="input input-bordered" />
+            </div>
+            </div>
+
+            <div className='lg:flex'>
+            <div className="form-control w-full max-w-xs">
+                <label className="label">
+                    <span className="label-text  text-black">Category</span>
                 </label>
                 <select {...register("category_id")}>
                 <option value="1">01</option>
@@ -81,20 +97,14 @@ const AddProduct = () => {
                 <option value="3">03</option>
             </select>
             </div>
-            
-            <div className="form-control w-full max-w-xs">
+            <div className="form-control w-full max-w-xs lg:ml-10">
                 <label className="label">
-                    <span className="label-text">Year of purchase</span>
-                </label>
-                <input type="number" {...register("years_of_use", { required: "Year of purchase is required" })} placeholder="Year of purchase" className="input input-bordered" />
-            </div>
-            <div className="form-control w-full max-w-xs">
-                <label className="label">
-                    <span className="label-text">posted time</span>
+                    <span className="label-text  text-black">posted time</span>
                 </label>
                 <input type="number" {...register("posted_time")} defaultValue={time} placeholder="post time" readOnly className="input input-bordered" />
             </div>
-            
+            </div>
+
             <input type="submit" className='btn btn-primary w-full mt-5' />
            </div>
            </div>
